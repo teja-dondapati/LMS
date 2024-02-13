@@ -1,0 +1,43 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <!-- <h2>Login Page</h2> -->
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3>Register</h3>
+
+    <div class="main-container">
+      <div class="main-container-one">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username" name="username" [(ngModel)]="username"/>
+
+        <label for="username">First Name</label>
+        <input type="text" placeholder="First Name" id="firstname" name="firstname" [(ngModel)]="firstName"/>
+
+        <label for="username">Last Name</label>
+        <input type="text" placeholder="Last Name" id="lastName" name="lastName" [(ngModel)]="lastName"/>
+      </div>
+
+      <div class="main-container-two">
+        <label for="username">Email</label>
+        <input type="email" placeholder="Email" id="email" name="email" [(ngModel)]="email">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password"/>
+
+        <label for="password"> Confirm Password</label>
+        <input type="password" placeholder=" Confirm Password" id="password2" />
+      </div>
+    </div>
+
+    <button (click)="signup(username, password, email, firstName, lastName)" style="color: black">Register</button>
+    <div class="para-register">
+      <p>
+        Already have an account?
+        <a href="/login" class="register-link">Login here</a>
+      </p>
+    </div>
+  </form>
+</div>

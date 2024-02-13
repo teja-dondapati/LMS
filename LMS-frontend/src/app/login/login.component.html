@@ -1,0 +1,25 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <!-- <h2>Login Page</h2> -->
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form ngNativeValidate>
+    <h3>Login</h3>
+
+    <label for="username">Username</label>
+    <input type="text" placeholder="Email or Username" id="username" name="username" [(ngModel)]="username" required/>
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password" required/>
+
+    <button (click)="login(username, password)" style="color: black">Log In</button>
+    <div class="para-login">
+      <p>Don't have an account? <a href="/signup" class="register-link">Register here</a></p>
+    </div>
+  </form>
+</div>
+
+
+

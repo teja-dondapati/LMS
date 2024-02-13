@@ -1,0 +1,18 @@
+.header-container{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank-image{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
